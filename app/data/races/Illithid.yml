@@ -1,0 +1,52 @@
+name: Illithid
+alignment: evil
+description: >-
+  <p>Will do this later.</p>
+  <p>I'm sure it will be great.</p>
+home_land_type: cavern
+playable: 0
+
+attacking: 1
+exploring : 3
+converting: 3
+
+perks:
+  gem_production: 10
+units:
+  - name: Larvae
+    cost:
+      food: 1500
+    power:
+      offense: 0
+      defense: 0
+  - name: Chattel
+    cost:
+      platinum: 320
+      ore: 0
+    power:
+      offense: 0
+      defense: 2
+  - name: Thrall
+    type: hybrid_elite
+    cost:
+      platinum: 1100
+      ore: 0
+    power:
+      offense: 3
+      defense: 5
+    perks:
+      counts_as_wizard_offense: 0.333
+      counts_as_wizard_defense: 0.333
+      offense_from_building: wizard_guild,10,5 # building type, ratio%, max
+      defense_from_building: wizard_guild,10,5 # building type, ratio%, max
+  - name: Illithid
+    cost:
+      platinum: 1200
+      mana: 15
+    power:
+      offense: 13
+      defense: 12
+    perks:
+      immortal_vs_land_range: 75
+      offense_staggered_land_range: 75;0.5,95;1
+    need_boat: false
